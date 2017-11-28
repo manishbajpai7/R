@@ -1,0 +1,7 @@
+BC<-c("Borrower Contribution 20%", "Borrower Contribution 20-40%","Borrower Contribution 40-70%")
+FOIR<-c("FOIR 10-20","FOIR 21-30", "FOIR 31-40", "FOIR 41-50", "FOIR 51-60","FOIR 61 and Above")
+LoanType<-c("Loan Type HL","Loan Type LAP")
+LTV<-c("LTV 10-20","LTV 21-30","LTV 31-40","LTV 41-50","LTV 51-60","LTV 61-70")
+IncomeStability<-c("Income Stability Less than 6 months","Income Stability Less than 1 year", "Income Stability Greater than 1 year")
+grid<-expand.grid(BC,FOIR,LoanType,LTV,IncomeStability)
+write.csv(grid,file = "Input.csv")
